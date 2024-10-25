@@ -21,6 +21,49 @@ export const feedbackText = {
     text: "We value your input! Share your thoughts, suggestions, or any issues you’ve encountered.",
     title: "Send Feedback?"
 }
-
+export const courses = [
+    {
+        id: 1,
+        title: "Chemistry",
+        description: "Learn the basics of chemistry and explore the world of atoms, molecules, and reactions.",
+        image: "/chemistry.png",
+        button: "Visit"
+    },
+    {
+        id: 2,
+        title: "Physics",
+        description: "Dive into the fascinating world of physics, covering topics from mechanics to quantum theory.",
+        image: "/physics.png",
+        button: "Visit"
+    },
+    {
+        id: 3,
+        title: "Biology",
+        description: "Understand the foundations of life through biology, studying cells, ecosystems, and biodiversity.",
+        image: "/biology.png",
+        button: "Visit"
+    },
+    {
+        id: 4,
+        title: "English",
+        description: "Improve your language skills with English, focusing on grammar, literature, and composition.",
+        image: "/english.png",
+        button: "Visit"
+    },
+    {
+        id: 5,
+        title: "Computer Science",
+        description: "Explore the world of technology and programming, from algorithms to software development.",
+        image: "/computer_science.png",
+        button: "Visit"
+    },
+    {
+        id: 6,
+        title: "Mathematics",
+        description: "Develop problem-solving skills and learn advanced mathematical concepts, from algebra to calculus.",
+        image: "/mathematics.png",
+        button: "Visit"
+    },
+];
 
 

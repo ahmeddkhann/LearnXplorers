@@ -3,21 +3,21 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { details } from "../data";
+import { details, courses } from "../data";
 
 const DashboardPage = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-300 flex">
-      {/* Sidebar (showed conditionally on small screens) */}
+      {/* Sidebar (shown conditionally on small screens) */}
       <aside
-        className={`fixed inset-y-0 left-0 w-64 bg-gray-800 p-4 z-30 transform ${
+        className={`fixed inset-y-0 left-0 w-60 bg-gray-800 p-4 z-30 transform ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 lg:translate-x-0 lg:relative lg:block`}
       >
-        <div className="flex justify-between items-center">
-          <h2 className="text-2xl font-bold mb-4">LearnXplorers</h2>
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-2xl font-bold">LearnXplorers</h2>
           <span>
             <Image
               src={details.Image}
@@ -30,37 +30,14 @@ const DashboardPage = () => {
         </div>
 
         <p className="text-xl ml-3 text-green-400">Our Courses</p>
-        <nav className="space-y-4">
-          <Link href="/dashboard/chemistry">
-            <p className="block px-4 py-2 rounded-md hover:bg-gray-700">
-              Chemistry
-            </p>
-          </Link>
-          <Link href="/dashboard/physics">
-            <p className="block px-4 py-2 rounded-md hover:bg-gray-700">
-              Physics
-            </p>
-          </Link>
-          <Link href="/dashboard/biology">
-            <p className="block px-4 py-2 rounded-md hover:bg-gray-700">
-              Biology
-            </p>
-          </Link>
-          <Link href="/dashboard/english">
-            <p className="block px-4 py-2 rounded-md hover:bg-gray-700">
-              English
-            </p>
-          </Link>
-          <Link href="/dashboard/computer-science">
-            <p className="block px-4 py-2 rounded-md hover:bg-gray-700">
-              Computer Science
-            </p>
-          </Link>
-          <Link href="/dashboard/maths">
-            <p className="block px-4 py-2 rounded-md hover:bg-gray-700">
-              Mathematics
-            </p>
-          </Link>
+        <nav className="space-y-3">
+          {courses.map((course) => (
+            <Link key={course.id} href={`/dashboard/${course.title.toLowerCase()}`}>
+              <p className="block px-3 py-2 rounded-md hover:bg-gray-700">
+                {course.title}
+              </p>
+            </Link>
+          ))}
         </nav>
       </aside>
 
@@ -73,9 +50,10 @@ const DashboardPage = () => {
       )}
 
       {/* Main Content */}
-      <main className="flex-1 p-8 ml-0 lg:ml-64">
+      <main className="flex-1 p-6 lg:ml-60 flex flex-col items-start">
         {/* Top Bar */}
-        <header className="flex justify-between items-center mb-6">
+       <div>
+       <header className="flex justify-between items-center mb-2 w-full">
           <h1 className="text-3xl font-bold">Welcome to LearnXplorers Academy</h1>
           {/* Toggle Button for Sidebar */}
           <button
@@ -84,10 +62,39 @@ const DashboardPage = () => {
           >
             {sidebarOpen ? "Close" : "Courses"}
           </button>
-        </header>
+        </header> 
 
-        {/* Dashboard Content */}
-        
+        <p className="mb-5 text-center">
+            Here are the courses we offer!
+        </p>
+       </div>
+
+        {/* Courses Section */}
+        <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 w-full">
+          {courses.map((course) => (
+            <div
+              key={course.id}
+              className="bg-gray-800 rounded-lg shadow-md overflow-hidden"
+            >
+              <Image
+                src={course.image}
+                width={400}
+                height={150}
+                alt={course.title}
+                className="w-full h-32 object-cover" // Shorter height for the image
+              />
+              <div className="p-3">
+                <h3 className="text-lg font-semibold mb-2">{course.title}</h3>
+                <p className="text-gray-400 mb-3 text-sm">{course.description}</p>
+                <Link href={`/dashboard/${course.title.toLowerCase()}`}>
+                  <button className="w-full py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300">
+                    {course.button}
+                  </button>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </section>
       </main>
     </div>
   );
