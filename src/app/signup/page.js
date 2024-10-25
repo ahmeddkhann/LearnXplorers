@@ -144,7 +144,9 @@ const SignUpPage = () => {
                     <Link href="/login">
                         <p className="text-blue-400 hover:underline ml-1">Log in</p>
                     </Link>
+                    
                 </div>
+                
             </div>
         </div>
     )
