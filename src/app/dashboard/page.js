@@ -38,6 +38,10 @@ const DashboardPage = () => {
               </p>
             </Link>
           ))}
+
+          <Link className="ml-3 hover:bg-gray-700 block px-3 py-2" href={"/feedback"}>
+          Feedback?
+          </Link>
         </nav>
       </aside>
 
