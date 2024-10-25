@@ -61,7 +61,7 @@ const SignUpPage = () => {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your name"
+                            placeholder="Name..."
                         />
                     </div>
                     <div>
@@ -74,7 +74,7 @@ const SignUpPage = () => {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your email"
+                            placeholder="Email..."
                         />
                     </div>
                     <div>
@@ -87,7 +87,7 @@ const SignUpPage = () => {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your username"
+                            placeholder="Username..."
                         />
                     </div>
                     <div>
@@ -100,7 +100,7 @@ const SignUpPage = () => {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your password"
+                            placeholder="Password..."
                         />
                     </div>
                     <div>
@@ -128,7 +128,7 @@ const SignUpPage = () => {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your phone number"
+                            placeholder=" phone number"
                         />
                     </div>
                     <button

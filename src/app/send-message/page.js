@@ -54,7 +54,7 @@ const SendMessagePage = () => {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your name"
+                            placeholder="Name..."
                         />
                     </div>
                     <div>
@@ -67,7 +67,7 @@ const SendMessagePage = () => {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your email"
+                            placeholder="Email..."
                         />
                     </div>
                     <div>
@@ -79,7 +79,7 @@ const SendMessagePage = () => {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-2 rounded-md bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your message"
+                            placeholder="Message..."
                             rows="4"
                         />
                     </div>
