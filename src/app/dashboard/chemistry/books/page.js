@@ -9,7 +9,7 @@ const Books = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="bg-orange-400 py-10 min-h-screen">
+        <div className="bg-gray-900 py-10 min-h-screen">
             {/* Navbar */}
             <div className="bg-blue-800 p-4 text-gray-300">
                 <div className="flex justify-end items-center">

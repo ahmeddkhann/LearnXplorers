@@ -9,7 +9,7 @@ const Chemists = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="bg-orange-400 py-10 min-h-screen ">
+        <div className="bg-gray-900 py-10 min-h-screen ">
             {/* Navbar */}
             <div className="bg-blue-800 p-4 text-gray-300 ">
                 <div className="flex  items-center justify-end">
@@ -44,7 +44,7 @@ const Chemists = () => {
             {/* Chemist Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
                 {chemist.map((chemistItem) => (
-                    <div key={chemistItem.id} className="bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
+                    <div key={chemistItem.id} className="bg-blue-200 shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
                         <img
                             src={chemistItem.image}
                             alt={chemistItem.name}
