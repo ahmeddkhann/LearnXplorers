@@ -124,56 +124,56 @@ export const chemist = [
         id: 3,
         name: "Linus Pauling",
         span: "1901–1994",
-        image: "/linus_pauling.jpg",
+        image: "/linus_pauling.png",
         description: "An American chemist who won two Nobel Prizes—one in Chemistry for his work on the nature of the chemical bond and another for Peace for his activism against nuclear weapons."
     },
     {
         id: 4,
         name: "Robert H. Grubbs",
         span: "1942–",
-        image: "/robert_h_grubbs.jpg",
+        image: "/robert_h_grubbs.png",
         description: "An American chemist known for his work in the field of organic chemistry, particularly in developing metathesis reactions, for which he received the Nobel Prize in Chemistry in 2005."
     },
     {
         id: 5,
         name: "Ahmed Zewail",
         span: "1946–2016",
-        image: "/ahmed_zewail.jpg",
+        image: "/ahmed_zewail.png",
         description: "An Egyptian-American chemist awarded the Nobel Prize in Chemistry in 1999 for his pioneering work on femtochemistry, which studies chemical reactions on extremely short timescales."
     },
     {
         id: 6,
         name: "Rosalind Franklin",
         span: "1920–1958",
-        image: "/rosalind_franklin.jpg",
+        image: "/rosalind_franklin.png",
         description: "A British chemist whose work with X-ray diffraction was crucial in understanding the molecular structures of DNA, RNA, viruses, coal, and graphite."
     },
     {
         id: 7,
         name: "Henry Moseley",
         span: "1887–1915",
-        image: "/henry_moseley.jpg",
+        image: "/henry_moseley.png",
         description: "An English chemist known for his work in atomic physics, particularly for formulating Moseley's Law, which established the concept of atomic number."
     },
     {
         id: 8,
         name: "John Dalton",
         span: "1766–1844",
-        image: "/john_dalton.jpg",
+        image: "/john_dalton.png",
         description: "An English chemist known for proposing the atomic theory, which laid the groundwork for modern chemistry by describing the nature of matter."
     },
     {
         id: 9,
         name: "Gilbert N. Lewis",
         span: "1875–1946",
-        image: "/gilbert_n_lewis.jpg",
+        image: "/gilbert_n_lewis.png",
         description: "An American physical chemist known for his contributions to the theory of chemical bonding and for introducing the concept of covalent bonds and Lewis structures."
     },
     {
         id: 10,
         name: "Svante Arrhenius",
         span: "1859–1927",
-        image: "/svante_arrhenius.jpg",
+        image: "/svante_arrhenius.png",
         description: "A Swedish scientist who developed the theory of electrolytic dissociation and won the Nobel Prize in Chemistry in 1903 for his work on the theory of chemical reaction rates."
     }
 ];

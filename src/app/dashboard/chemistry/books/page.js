@@ -1,18 +1,18 @@
-// src/pages/chemists.js
+// src/pages/books.js
 "use client";
 
 import React, { useState } from 'react';
-import { chemist } from '@/app/data';
+import { chemistryBooks } from '@/app/data';
 import Link from 'next/link';
 
-const Chemists = () => {
+const Books = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="bg-orange-400 py-10 min-h-screen ">
+        <div className="bg-orange-400 py-10 min-h-screen">
             {/* Navbar */}
-            <div className="bg-blue-800 p-4 text-gray-300 ">
-                <div className="flex  items-center justify-end">
+            <div className="bg-blue-800 p-4 text-gray-300">
+                <div className="flex justify-end items-center">
                     <button
                         className="text-gray-200 hover:text-gray-300 sm:hidden"
                         onClick={() => setIsOpen(!isOpen)}
@@ -38,22 +38,18 @@ const Chemists = () => {
 
             {/* Page Title */}
             <div className="container mx-auto mt-8 p-4">
-                <h1 className="text-4xl font-bold text-white text-center mb-6">Famous Chemists</h1>
+                <h1 className="text-4xl font-bold text-white text-center mb-6">Chemistry Books</h1>
             </div>
 
-            {/* Chemist Cards */}
+            {/* Book Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-0 sm:mx-4">
-                {chemist.map((chemistItem) => (
-                    <div key={chemistItem.id} className="bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
-                        <img
-                            src={chemistItem.image}
-                            alt={chemistItem.name}
-                            className="w-full h-40 object-cover rounded-t-lg"
-                        />
+                {chemistryBooks.map((book, index) => (
+                    <div key={index} className="bg-gray-800 shadow-2xl rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
                         <div className="p-4">
-                            <h2 className="text-xl font-semibold">{chemistItem.name}</h2>
-                            <p className="text-gray-500">{chemistItem.span}</p>
-                            <p className="text-gray-700 mt-2">{chemistItem.description}</p>
+                            <h2 className="text-xl text-gray-100 font-bold">{book.title}</h2>
+                            <p className="text-gray-200 mb-2">by {book.author}</p>
+                            <p className="text-gray-300">Published: {book.year}</p>
+                            <p className="text-gray-400 mt-2">{book.description}</p>
                         </div>
                     </div>
                 ))}
@@ -62,4 +58,4 @@ const Chemists = () => {
     );
 };
 
-export default Chemists;
+export default Books;
