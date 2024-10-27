@@ -25,7 +25,7 @@ const Chemists = () => {
             </div>
 
             {/* Chemist Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-4">
                 {chemist.map((chemistItem) => (
                     <div key={chemistItem.id} className="bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 p-4">
                         <img

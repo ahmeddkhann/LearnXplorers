@@ -72,20 +72,52 @@ export const chemsitryBasic = {
     image: "/chemistry.png",
     explaination: "Chemistry is the scientific study of matter, its properties, composition, structure, and the changes it undergoes during chemical reactions. It explores the interactions between atoms and molecules, which are the building blocks of all substances. Chemistry is often referred to as the central science because it connects physics with other natural sciences, such as biology and geology."
 }
+export const chemistryBranches = [
+    {
+        "branch": "Organic Chemistry",
+        "description": "The study of the structure, properties, composition, reactions, and synthesis of carbon-containing compounds. Organic chemistry is essential for the development of pharmaceuticals, plastics, and other materials.",
+        "image": "/organic_chemistry.png"
+    },
+    {
+        "branch": "Inorganic Chemistry",
+        "description": "The study of inorganic compounds, which include metals, minerals, and organometallics. Inorganic chemistry focuses on the properties and behavior of these compounds, which are critical in catalysis, materials science, and biochemistry.",
+        "image": "/inorganic_chemistry.png"
+    },
+    {
+        "branch": "Physical Chemistry",
+        "description": "The branch that combines principles of physics and chemistry to study how matter behaves on a molecular and atomic level. It includes topics such as thermodynamics, quantum mechanics, and kinetics.",
+        "image": "/physical_chemistry.png"
+    },
+    {
+        "branch": "Analytical Chemistry",
+        "description": "The branch focused on the qualitative and quantitative analysis of substances. Analytical chemists develop techniques to determine the composition of materials, including chromatography, mass spectrometry, and spectroscopy.",
+        "image": "/analytical_chemistry.png"
+    },
+    {
+        "branch": "Biochemistry",
+        "description": "The study of chemical processes within and related to living organisms. Biochemistry combines biology and chemistry to explore cellular processes, metabolism, and the structure and function of biomolecules.",
+        "image": "/bio_chemistry.png"
+    },
+    {
+        "branch": "Theoretical Chemistry",
+        "description": "The study of chemistry using mathematical models and abstractions to explain and predict chemical phenomena. Theoretical chemistry helps in understanding chemical systems and designing new experiments.",
+        "image": "/theoratical_chemistry.png"
+    }
+]
 
 export const chemist = [
     {
         id: 1,
         name: "Marie Curie",
         span: "1867–1934",
-        image: "/marie_curie.jpg",
+        image: "/madam_curie.png",
         description: "Known for her research on radioactivity, Curie was the first woman to win a Nobel Prize and remains the only person to win Nobel Prizes in two different scientific fields (Physics and Chemistry)."
     },
     {
         id: 2,
         name: "Dmitri Mendeleev",
         span: "1834–1907",
-        image: "/dmitri_mendeleev.jpg",
+        image: "/dmitri_mendeleev.png",
         description: "A Russian chemist best known for creating the Periodic Table of Elements, which organizes elements by their atomic number and chemical properties."
     },
     {
@@ -209,38 +241,6 @@ export const chemistryBooks = [
     }
 ]
 
-export const chemistryBranches = [
-    {
-        "branch": "Organic Chemistry",
-        "description": "The study of the structure, properties, composition, reactions, and synthesis of carbon-containing compounds. Organic chemistry is essential for the development of pharmaceuticals, plastics, and other materials.",
-        "image": "/images/organic_chemistry.jpg"
-    },
-    {
-        "branch": "Inorganic Chemistry",
-        "description": "The study of inorganic compounds, which include metals, minerals, and organometallics. Inorganic chemistry focuses on the properties and behavior of these compounds, which are critical in catalysis, materials science, and biochemistry.",
-        "image": "/images/inorganic_chemistry.jpg"
-    },
-    {
-        "branch": "Physical Chemistry",
-        "description": "The branch that combines principles of physics and chemistry to study how matter behaves on a molecular and atomic level. It includes topics such as thermodynamics, quantum mechanics, and kinetics.",
-        "image": "/images/physical_chemistry.jpg"
-    },
-    {
-        "branch": "Analytical Chemistry",
-        "description": "The branch focused on the qualitative and quantitative analysis of substances. Analytical chemists develop techniques to determine the composition of materials, including chromatography, mass spectrometry, and spectroscopy.",
-        "image": "/images/analytical_chemistry.jpg"
-    },
-    {
-        "branch": "Biochemistry",
-        "description": "The study of chemical processes within and related to living organisms. Biochemistry combines biology and chemistry to explore cellular processes, metabolism, and the structure and function of biomolecules.",
-        "image": "/images/biochemistry.jpg"
-    },
-    {
-        "branch": "Theoretical Chemistry",
-        "description": "The study of chemistry using mathematical models and abstractions to explain and predict chemical phenomena. Theoretical chemistry helps in understanding chemical systems and designing new experiments.",
-        "image": "/images/theoretical_chemistry.jpg"
-    }
-]
 
 export const physicsBasic = {
     definition: "Physics is defined as the branch of science that studies matter, its motion and behavior through space and time, and the related entities of energy and force.",
